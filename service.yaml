@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: kubedemo-service
 spec:
-  type: NodePort
   selector:
     app: kubedemo
   ports:
@@ -11,3 +10,4 @@ spec:
       port: 5000
       targetport: 5000
       nodeport: 30082
+  type: NodePort
