@@ -6,7 +6,7 @@ spec:
   type: NodePort
   selector:
     app: kubedemo
-  port:
+  ports:
     - protocol: TCP
       port: 5000
       targetport: 5000
