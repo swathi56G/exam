@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubedemo-Deployment
+spec: 
+  replicas: 4
+  selector:
+    matchLabels:
+      app: kubedemo
+  templates:
+    metadata:
+      labels:
+        app: kubedemo
+    spec:
+      containers:
+        - nodeport: 5000
+      -- image: swathi1276/myapp:latest
+       - port: 5000
+      type: NodePort

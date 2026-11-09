@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubedemo-Service
+spec:
+  selector:
+    app: kubedemo
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+      nodeport: 30082
+  type: NodePort
+
