@@ -8,6 +8,6 @@ spec:
   ports:
     - protocol: TCP
       port: 5000
-      targetport: 5000
-      nodeport: 30082
+      targetPort: 5000
+      nodePort: 30082
   type: NodePort
